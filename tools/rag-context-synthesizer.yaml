@@ -1,0 +1,19 @@
+name: "rag-context-synthesizer"
+description: "Synthesizes grounded conversational answers from ranked document chunks with verified citation markers."
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: "Original user query."
+    context_chunks:
+      type: array
+      items:
+        type: string
+      description: "List of filtered and ranked text chunks."
+    temperature:
+      type: number
+      description: "Generation temperature (default 0.0 for deterministic output)."
+  required:
+    - query
+    - context_chunks

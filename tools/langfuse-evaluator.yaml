@@ -1,0 +1,15 @@
+name: "langfuse-evaluator"
+description: "Computes RAG evaluation metrics (groundedness, relevance, latency) and logs complete traces to Langfuse."
+input_schema:
+  type: object
+  properties:
+    trace_id:
+      type: string
+      description: "Unique execution trace identifier."
+    evaluation_metric:
+      type: string
+      enum: ["groundedness", "relevance", "latency", "hallucination"]
+      description: "Metric type to evaluate and record."
+  required:
+    - trace_id
+    - evaluation_metric

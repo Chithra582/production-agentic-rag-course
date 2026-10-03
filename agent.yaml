@@ -1,0 +1,21 @@
+spec_version: "0.1.0"
+name: "production-agentic-rag-course"
+version: "1.0.0"
+description: "Production-grade agentic Retrieval-Augmented Generation (RAG) system with LangGraph workflows, OpenSearch hybrid search, Docling chunking, and Langfuse observability."
+author: "Mother-of-AI Contributors <support@motherofai.com>"
+license: "MIT"
+metadata:
+  domain: "Data & Analytics / Production Agentic RAG, Hybrid Retrieval & Observability"
+  category: "Data & Analytics"
+  framework: "LangGraph / LangChain / FastAPI / OpenSearch"
+  language: "Python"
+skills:
+  - "document-ingestion-chunking"
+  - "hybrid-vector-lexical-retrieval"
+  - "grounded-context-synthesis"
+  - "rag-telemetry-evaluation"
+tools:
+  - "docling-chunker"
+  - "opensearch-hybrid-retriever"
+  - "rag-context-synthesizer"
+  - "langfuse-evaluator"

@@ -1,0 +1,16 @@
+name: "opensearch-hybrid-retriever"
+description: "Executes parallel dense cosine vector search and sparse BM25 lexical retrieval across OpenSearch index collections."
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: "Natural language user query to retrieve context for."
+    top_k:
+      type: integer
+      description: "Number of top ranked candidate chunks to return."
+    filter_metadata:
+      type: object
+      description: "Optional tenant ID or document category filter masks."
+  required:
+    - query

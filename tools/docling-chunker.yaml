@@ -1,0 +1,16 @@
+name: "docling-chunker"
+description: "Parses and segments complex enterprise documents into semantically coherent chunk atoms with metadata extraction."
+input_schema:
+  type: object
+  properties:
+    document_uri:
+      type: string
+      description: "Path or URL of the target document to ingest."
+    chunk_size:
+      type: integer
+      description: "Target token size for individual chunk segments."
+    overlap_tokens:
+      type: integer
+      description: "Sliding window overlap between contiguous chunks."
+  required:
+    - document_uri
